@@ -1,0 +1,102 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head  profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/jpg" 
+      href="http://www.englishcountrytune.com/favicon.png">
+
+<title>English Country Tune</title>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript">
+<!--
+
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox({
+        'width'         : 640,
+        'height'        : 400,
+        'autoScale'     : false,
+        'hideOnOverlayClick' : true,
+        'hideOnContentClick' : true,
+        'padding' : 1,
+        'overlayOpacity' : 0.5,
+        'overlayColor' : '#000',   
+        'onComplete' : function(){
+            $('#fancybox-wrap').click(function(){$.fancybox.close()});
+        }
+    });	
+});
+
+
+function toggle()
+{
+    var oIfr = document.getElementById('iframe-ect');
+    if (oIfr.style.display=='block'){
+        oIfr.style.display = 'none';
+    }
+    else {
+        oIfr.style.display = 'block';
+        window.location.hash="iframe-ect"; 
+    }
+
+}
+
+//--!>
+</script>
+
+
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+
+</head>
+<body>
+<div>
+<div class="imageunderlay" id="underlayi" onMouseDown="HideAll()"></div>
+
+<div class="centered">
+
+<TABLE BORDER=0 width="840">
+    <TR>
+        <TH class="thumbcell"><a id="single_image" href="images/2.jpg"><img src="images/tn2.jpg" alt=""></a>
+        <TH ROWSPAN=3 >
+       
+<div class="mainpage">
+
+<iframe width="400" height="300" src="http://www.youtube.com/embed/SbshRb8MJIU?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+
+<h1>English Country Tune</h1>
+<p>Demo : <a href="http://ded.increpare.com/~locus/english_country_tune/English%20Country%20Tune%20Demo%201.0%20Win.exe">PC</a> - <a href="http://ded.increpare.com/~locus/english_country_tune/English%20Country%20Tune%20Demo.dmg">Mac</a><p/>
+<p>Buy Now<br/><a href="http://www.humblebundle.com/store/product/englishcountrytune"
+                    onClick="toggle(); return false" >PC / Mac / Linux</a><br/><a href="http://store.steampowered.com/app/207570">Steam</a> <br/> 
+                    <a href="http://itunes.apple.com/us/app/english-country-tune/id476962614?ls=1&mt=8">iPad / iPhone</a> 
+</div>
+
+        <TH class="thumbcell"><a id="single_image" href="images/1.jpg"><img src="images/tn1.jpg" alt=""></a>
+    <TR>
+        <TH class="thumbcell"><a id="single_image" href="images/4.jpg"><img src="images/tn4.jpg" alt=""></a>
+        <TH class="thumbcell"><a id="single_image" href="images/3.jpg"><img src="images/tn3.jpg" alt=""></a>
+    <TR>
+        <TH class="thumbcell"><a id="single_image" href="images/5.jpg"><img src="images/tn5.jpg" alt=""></a>
+        <TH class="thumbcell"><a id="single_image" href="images/6.jpg"><img src="images/tn6.jpg" alt=""></a>
+        
+</TABLE>
+<center>
+<iframe name="iframe-ect" id="iframe-ect" style="display:none" width='550' height='264' scrolling='no' frameBorder='0' style='border:none;' src='http://www.humblebundle.com/store/product/englishcountrytune'></iframe>
+</center>
+<br/>
+<hr>
+<a class="inclink" href="http://www.increpare.com">increpare games</a>
+
+</div>
+</div>
+
+</body>
+</html>
